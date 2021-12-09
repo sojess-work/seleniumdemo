@@ -57,8 +57,7 @@ public class NewTest {
   }
   @BeforeTest
   public void beforeTest() {
-	  String projectpath =System.getProperty("user.dir");
-	  System.setProperty("webdriver.chrome.driver",projectpath+"/drivers/chromedriverlinux");
+	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		driver = new ChromeDriver();
 		String baseUrl = "https://www.urbanladder.com/tv-units?src=g_topnav_storage_living-storage_tv-units";
 		driver.get(baseUrl);
