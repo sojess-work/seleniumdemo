@@ -19,7 +19,7 @@ public class NewTest {
   public void test_checkbox() {
 	  WebElement checkbox = driver.findElement(By.xpath("//*[@id=\"filters-form\"]/div[2]/div/label"));
 		checkbox.click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		TimeUnit.SECONDS.sleep(5);
 		System.out.println(driver.findElement(By.id("filters_availability_In_Stock_Only")).isSelected());
   }
   @Test(priority=1)
@@ -62,10 +62,10 @@ public class NewTest {
 		String baseUrl = "https://www.urbanladder.com/tv-units?src=g_topnav_storage_living-storage_tv-units";
 		driver.get(baseUrl);
 
-		driver.manage().timeouts().implicitlyWait(13, TimeUnit.SECONDS);
+		TimeUnit.SECONDS.sleep(5);
 		driver.findElement(By.linkText("Close")).click();
 		System.out.println("Closed pop-up");
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		TimeUnit.SECONDS.sleep(5);
   }
 
   @AfterTest
