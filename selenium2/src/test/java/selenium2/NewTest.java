@@ -16,7 +16,7 @@ import org.testng.annotations.AfterTest;
 public class NewTest {
 	WebDriver driver;
   @Test(priority=0)
-  public void test_checkbox() {
+  public void test_checkbox() throws InterruptedException {
 	  WebElement checkbox = driver.findElement(By.xpath("//*[@id=\"filters-form\"]/div[2]/div/label"));
 		checkbox.click();
 		TimeUnit.SECONDS.sleep(5);
@@ -56,7 +56,7 @@ public class NewTest {
 		Thread.sleep(5000);
   }
   @BeforeTest
-  public void beforeTest() {
+  public void beforeTest() throws InterruptedException {
 	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		driver = new ChromeDriver();
 		String baseUrl = "https://www.urbanladder.com/tv-units?src=g_topnav_storage_living-storage_tv-units";
