@@ -5,6 +5,7 @@
     <classes>
       <class name="selenium2.NewTest2"/>
       <class name="selenium2.NewTest1"/>
+      <class name="selenium2.NewTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
