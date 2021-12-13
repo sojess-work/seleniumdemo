@@ -13,7 +13,7 @@ public class NewTest2 {
   }
   @BeforeTest
   public void beforeTest() {
-	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+	  System.setProperty("webdriver.chrome.driver","C:\\Users\\ustjavasdetb424\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
 	  driver = new ChromeDriver();
 	  driver.get( "http:/www.google.com");
 	  System.out.println("Google loaded");
