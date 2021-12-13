@@ -57,7 +57,7 @@ public class NewTest {
   }
   @BeforeTest
   public void beforeTest() throws InterruptedException {
-	  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+	  System.setProperty("webdriver.chrome.driver","C:\\Users\\ustjavasdetb424\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
 		driver = new ChromeDriver();
 		String baseUrl = "https://www.urbanladder.com/tv-units?src=g_topnav_storage_living-storage_tv-units";
 		driver.get(baseUrl);
